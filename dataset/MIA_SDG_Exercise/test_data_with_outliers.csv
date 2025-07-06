@@ -1,0 +1,97 @@
+lab_test_count,secondary_diagnosis,primary_diagnosis,tertiary_diagnosis,medication_count,stay_duration_days,inpatient_visits,age_range,provider_specialty,exit_status_code,insurance_type_code,diagnosis_count,procedure_count,drug_013,entry_type_code,entry_origin_code,ethnic_group,outpatient_visits,emergency_visits,sex,med_change_flag,drug_014,drug_008,hba1c_result,drug_015,on_diabetes_med,drug_017,drug_006,drug_020,max_glucose_level,readmission_status,is_member
+37,DX127,DX426,DX448,13,1,0,40-60,,1,,9,1,constant,2,20,Caucasian,0,1,Male,No,absent,absent,,absent,Yes,absent,absent,absent,,readmitted_late,no
+11,DX166,DX594,DX754,12,1,0,20-40,,1,self_pay,8,0,constant,1,7,Caucasian,1,0,Female,Yes,constant,absent,,absent,Yes,absent,absent,absent,,readmitted_late,no
+17,DX297,DX293,DX287,12,1,0,40-60,Cardiologist,1,self_pay,4,4,constant,3,4,AfricanAmerican,0,0,Male,Yes,absent,absent,,absent,Yes,constant,absent,absent,,not_readmitted,no
+55,DX126,DX136,DX448,27,7,0,80+,,3,provider_c,8,4,absent,1,7,Caucasian,0,1,Female,No,absent,absent,,absent,No,absent,absent,absent,,readmitted_late,no
+41,DX594,DX297,DX110,21,4,5,40-60,,1,commercial_ins,9,6,decrease,1,1,AfricanAmerican,3,4,Male,Yes,absent,absent,,absent,Yes,absent,absent,absent,,readmitted_early,yes
+9,DX447,DX412,DX166,9,9,0,80+,,3,,9,0,absent,1,7,Caucasian,0,0,Male,No,absent,absent,,constant,Yes,absent,absent,absent,,not_readmitted,no
+13,DX294,DX297,DX110,8,4,0,60-80,,2,,7,3,absent,3,4,Caucasian,0,0,Male,No,absent,absent,,absent,Yes,absent,constant,absent,,not_readmitted,no
+10,DX880,DX143,DX_UNK,3,2,0,0-20,Pediatric Endocrinologist,25,,2,0,constant,6,1,AfricanAmerican,0,0,Female,No,absent,absent,,absent,Yes,absent,absent,absent,,not_readmitted,yes
+21,DX185,DX310,DX367,16,2,1,60-80,,25,,9,0,constant,6,17,AfricanAmerican,0,2,Male,Yes,absent,constant,,absent,Yes,absent,absent,absent,Norm,not_readmitted,yes
+78,DX520,DX780,DX372,33,10,2,60-80,Internal Medicine,6,,5,3,decrease,8,7,Caucasian,2,0,Male,Yes,absent,absent,,absent,Yes,absent,absent,absent,,readmitted_early,yes
+44,DX134,DX778,DX166,40,13,0,60-80,Emergency Medicine,22,provider_c,9,4,decrease,2,7,Caucasian,0,0,Male,Yes,absent,absent,,absent,Yes,constant,absent,absent,,not_readmitted,no
+57,DX387,DX460,DX448,17,7,6,80+,,13,,9,1,constant,2,1,Caucasian,12,2,Female,No,absent,absent,,absent,Yes,absent,absent,absent,,readmitted_early,yes
+50,DX112,DX600,DX297,15,2,11,20-40,Emergency Medicine,1,self_pay,7,0,increase,3,1,Caucasian,0,4,Male,Yes,constant,absent,,absent,Yes,absent,absent,constant,,readmitted_early,yes
+34,DX287,DX227,DX110,10,5,9,40-60,Emergency Medicine,6,managed_care,7,0,absent,2,7,Caucasian,0,7,Female,Yes,constant,absent,,absent,Yes,absent,absent,constant,,readmitted_late,yes
+38,DX543,DX138,DX321,37,12,1,40-60,,6,managed_care,9,2,decrease,1,7,Hispanic,8,2,Female,Yes,constant,absent,,absent,Yes,absent,absent,absent,,readmitted_late,yes
+46,DX780,DX293,DX175,38,10,7,60-80,Internal Medicine,3,,9,6,increase,1,7,AfricanAmerican,0,2,Female,Yes,constant,absent,,absent,Yes,absent,absent,absent,,not_readmitted,yes
+78,DX127,DX310,DX460,24,13,0,60-80,Cardiologist,25,,9,6,constant,6,7,Caucasian,0,0,Female,Yes,constant,absent,high,absent,Yes,absent,constant,absent,,not_readmitted,yes
+25,DX535,DX520,DX110,26,8,0,40-60,,25,,7,2,decrease,6,17,Caucasian,1,0,Male,Yes,absent,absent,,absent,Yes,absent,absent,absent,High,readmitted_late,yes
+53,DX402,DX137,DX401,10,3,0,60-80,Internal Medicine,1,,9,2,absent,2,1,Caucasian,0,0,Female,No,absent,absent,,absent,No,absent,absent,absent,,not_readmitted,no
+34,DX520,DX780,DX110,11,5,0,80+,,3,provider_c,9,0,absent,1,7,Caucasian,0,1,Male,No,constant,absent,,absent,Yes,absent,absent,absent,,not_readmitted,no
+19,DX296,DX297,DX168,5,1,3,40-60,,25,,9,0,absent,6,17,Caucasian,3,0,Female,No,absent,absent,,absent,No,absent,absent,absent,Norm,not_readmitted,yes
+1,DX558,DX557,DX110,18,5,0,60-80,Neurologist,6,no_insurance,5,6,absent,3,1,AfricanAmerican,0,0,Female,No,absent,absent,,constant,Yes,absent,absent,absent,,not_readmitted,no
+18,DX451,DX268,DX178,25,6,2,60-80,Family Practice,6,provider_a,9,0,absent,5,17,Caucasian,3,2,Female,Yes,constant,constant,,absent,Yes,absent,absent,absent,Norm,not_readmitted,yes
+20,DX110,DX309,DX_UNK,6,1,0,20-40,,1,provider_a,2,2,absent,3,1,Caucasian,0,0,Female,No,absent,absent,,absent,No,absent,absent,absent,,not_readmitted,no
+22,DX112,DX293,DX297,10,4,0,60-80,,1,provider_c,9,6,constant,2,4,Caucasian,0,0,Male,No,absent,absent,,absent,Yes,absent,absent,absent,,readmitted_late,no
+53,DX363,DX627,DX367,40,6,7,60-80,Emergency Medicine,6,managed_care,9,5,increase,2,7,Caucasian,3,11,Female,Yes,absent,constant,,absent,Yes,constant,absent,absent,,readmitted_late,yes
+17,DX299,DX310,DX110,13,4,0,80+,Family Practice,25,,7,0,decrease,6,18,Caucasian,3,0,Female,Yes,absent,constant,,absent,Yes,absent,absent,absent,Norm,readmitted_late,yes
+52,DX310,DX387,DX289,11,2,3,60-80,,11,provider_c,9,3,decrease,5,1,Caucasian,2,2,Female,Yes,absent,absent,,absent,Yes,absent,absent,absent,,not_readmitted,yes
+1,DX111,DX168,DX401,17,3,0,40-60,,1,provider_b,6,3,decrease,5,17,Caucasian,3,3,Female,Yes,absent,absent,,absent,Yes,absent,absent,absent,,not_readmitted,yes
+44,DX892,DX448,DX875,29,1,0,80+,Cardiologist,1,provider_c,6,1,decrease,3,1,Caucasian,1,0,Male,Yes,constant,absent,,absent,Yes,absent,absent,absent,,readmitted_early,no
+42,DX324,DX289,DX191,13,2,4,40-60,Internal Medicine,1,,6,1,absent,6,17,AfricanAmerican,1,2,Male,No,absent,absent,,absent,Yes,constant,absent,absent,,readmitted_late,yes
+37,DX166,DX134,DX407,13,4,4,40-60,Internal Medicine,1,provider_b,7,0,decrease,1,7,Hispanic,0,7,Male,Yes,absent,absent,,absent,Yes,absent,absent,absent,,readmitted_early,no
+50,DX246,DX288,DX306,12,3,1,60-80,,1,,9,0,absent,1,7,Caucasian,0,0,Female,No,absent,constant,,absent,Yes,absent,absent,absent,,readmitted_late,no
+5,DX418,DX168,DX287,20,3,0,40-60,,1,state_insurance,9,4,increase,5,17,Caucasian,5,0,Female,Yes,constant,absent,,absent,Yes,absent,absent,absent,,not_readmitted,yes
+26,DX166,DX601,DX147,34,13,4,40-60,,25,,8,1,constant,6,17,Caucasian,0,2,Female,No,absent,absent,,absent,Yes,absent,absent,absent,Very High,readmitted_early,yes
+30,DX605,DX451,DX292,13,3,0,60-80,Internal Medicine,1,,6,0,absent,2,1,Caucasian,0,0,Female,No,constant,absent,,absent,Yes,absent,absent,absent,,readmitted_late,no
+87,DX310,DX293,DX166,34,8,2,80+,Cardiologist,6,,9,6,increase,6,17,Caucasian,0,0,Female,Yes,absent,constant,,absent,Yes,constant,absent,absent,,readmitted_late,yes
+59,DX310,DX636,DX307,22,8,7,40-60,,3,provider_a,9,2,absent,1,7,Caucasian,4,3,Female,No,absent,absent,,absent,No,absent,absent,absent,Very High,readmitted_late,yes
+61,DX387,DX363,DX369,21,10,4,60-80,Emergency Medicine,22,managed_care,9,6,increase,1,7,Caucasian,0,3,Female,Yes,absent,absent,,absent,Yes,absent,absent,absent,,not_readmitted,yes
+47,DX520,DX778,DX112,22,10,7,60-80,,6,provider_a,9,5,absent,1,7,Caucasian,6,1,Female,No,absent,absent,,absent,No,absent,absent,absent,Very High,not_readmitted,yes
+81,DX196,DX115,DX166,26,9,2,60-80,,6,,7,5,constant,6,17,Hispanic,0,0,Female,No,absent,absent,,absent,Yes,absent,absent,absent,,readmitted_early,yes
+46,DX111,DX293,DX363,14,2,0,40-60,,1,provider_a,7,6,absent,1,7,Caucasian,3,0,Male,No,absent,absent,,absent,No,absent,absent,absent,,readmitted_late,no
+52,DX309,DX297,DX294,59,7,1,60-80,Cardiothoracic Surgeon,22,provider_c,9,6,increase,3,1,Caucasian,1,1,Female,Yes,constant,absent,,absent,Yes,absent,constant,absent,,not_readmitted,yes
+19,DX110,DX310,DX287,7,1,1,40-60,,25,,3,0,absent,6,17,AfricanAmerican,0,0,Female,Yes,constant,absent,,constant,Yes,absent,absent,absent,High,readmitted_late,yes
+35,DX067,DX387,DX372,17,4,1,60-80,Internal Medicine,5,,9,3,constant,1,7,Caucasian,0,0,Male,Yes,absent,absent,,absent,Yes,absent,constant,absent,,not_readmitted,no
+34,DX203,DX227,DX195,17,5,6,40-60,Internal Medicine,22,managed_care,8,1,absent,3,1,Caucasian,0,11,Female,No,absent,absent,,absent,No,absent,absent,absent,,readmitted_late,yes
+35,DX168,DX560,DX110,8,1,0,20-40,Orthopedic Surgeon,1,capitation,4,0,absent,3,1,Caucasian,0,4,Male,Yes,constant,absent,,absent,Yes,absent,absent,constant,,readmitted_late,no
+72,DX166,DX114,DX367,22,10,11,40-60,Internal Medicine,7,provider_c,9,0,constant,1,7,Caucasian,0,16,Female,No,absent,absent,,absent,Yes,absent,absent,absent,,readmitted_late,yes
+60,DX236,DX117,DX289,26,12,4,20-40,Emergency Medicine,22,managed_care,9,1,decrease,2,7,Caucasian,1,4,Female,Yes,absent,absent,high,absent,Yes,absent,absent,absent,,readmitted_early,yes
+24,DX460,DX268,DX166,18,4,1,60-80,Family Practice,25,,8,0,increase,6,17,Caucasian,1,0,Female,Yes,absent,absent,,absent,Yes,absent,absent,absent,High,not_readmitted,yes
+26,DX310,DX363,DX307,19,3,0,60-80,,25,,9,0,absent,6,17,Caucasian,0,2,Female,Yes,constant,absent,,absent,Yes,absent,constant,absent,Norm,not_readmitted,yes
+22,DX309,DX310,DX372,20,3,0,60-80,,25,,8,1,increase,6,17,Caucasian,1,2,Male,Yes,absent,absent,,absent,Yes,absent,absent,absent,Norm,readmitted_late,yes
+15,DX289,DX600,DX433,5,1,4,60-80,,1,,7,0,absent,5,17,Caucasian,0,3,Male,No,absent,absent,,absent,No,absent,absent,absent,High,readmitted_early,yes
+64,DX460,DX367,DX520,23,7,0,60-80,,3,provider_c,9,1,constant,1,7,Caucasian,0,0,Female,Yes,constant,absent,normal,absent,Yes,absent,absent,absent,,not_readmitted,no
+15,DX439,DX421,DX166,13,1,1,60-80,Family Practice,11,provider_c,8,5,absent,5,17,Caucasian,5,0,Male,No,absent,absent,,absent,No,absent,absent,absent,Very High,not_readmitted,yes
+51,DX310,DX384,DX110,13,4,0,60-80,Cardiologist,4,provider_c,8,0,increase,3,1,AfricanAmerican,0,0,Female,Yes,constant,absent,,absent,Yes,absent,absent,absent,,readmitted_early,no
+5,DX602,DX056,DX110,21,2,2,60-80,Urologist,1,,5,1,constant,5,17,Caucasian,7,1,Male,Yes,absent,absent,,absent,Yes,absent,constant,absent,,readmitted_late,yes
+42,DX287,DX367,DX110,13,1,0,40-60,,1,commercial_ins,9,0,constant,1,7,Caucasian,0,0,Male,Yes,absent,absent,,absent,Yes,constant,absent,absent,,not_readmitted,no
+59,DX316,DX460,DX594,14,4,0,80+,Emergency Medicine,1,provider_c,9,1,absent,2,7,Caucasian,0,0,Female,No,constant,absent,normal,absent,Yes,absent,absent,absent,,readmitted_early,no
+20,DX166,DX310,DX384,21,4,0,60-80,Cardiologist,1,,7,0,increase,3,1,Caucasian,0,0,Male,Yes,absent,absent,,absent,Yes,absent,absent,absent,,readmitted_early,no
+40,DX387,DX363,DX110,19,4,0,40-60,Internal Medicine,1,,6,0,constant,1,7,Caucasian,0,0,Female,No,absent,absent,,absent,Yes,absent,absent,absent,,not_readmitted,no
+25,DX111,DX289,DX447,32,13,4,20-40,Nephrologist,1,,9,2,increase,5,17,Caucasian,3,4,Female,Yes,absent,absent,,absent,Yes,absent,absent,absent,High,readmitted_late,yes
+62,DX307,DX310,DX136,11,6,1,80+,Internal Medicine,6,provider_c,8,0,decrease,2,7,Caucasian,0,0,Female,Yes,absent,absent,,constant,Yes,absent,absent,absent,,readmitted_late,no
+80,DX287,DX294,DX162,20,5,0,40-60,Internal Medicine,2,,7,4,absent,1,7,Caucasian,0,0,Female,No,absent,absent,moderate high,absent,No,absent,absent,absent,,not_readmitted,no
+49,DX289,DX310,DX892,18,4,11,40-60,Nephrologist,1,provider_c,10,1,decrease,1,7,AfricanAmerican,1,7,Male,Yes,absent,absent,,absent,Yes,absent,absent,absent,,readmitted_late,yes
+40,DX440,DX380,DX175,12,3,2,60-80,,1,,7,1,absent,0,7,Caucasian,0,0,Male,No,absent,absent,,absent,No,absent,absent,absent,,not_readmitted,no
+67,DX310,DX594,DX166,24,7,0,80+,Internal Medicine,6,,9,4,constant,1,7,Caucasian,1,1,Female,No,absent,absent,,absent,Yes,absent,absent,absent,,not_readmitted,no
+41,DX423,DX440,DX287,15,4,1,60-80,Family Practice,3,,8,0,increase,1,5,AfricanAmerican,1,1,Female,Yes,absent,absent,,absent,Yes,absent,constant,absent,,readmitted_late,no
+71,DX601,DX316,DX594,18,9,1,60-80,Emergency Medicine,3,provider_c,9,2,decrease,2,7,AfricanAmerican,0,0,Male,Yes,absent,absent,,absent,Yes,absent,absent,absent,,not_readmitted,no
+24,DX387,DX328,DX166,20,2,0,60-80,,25,,9,6,constant,6,17,Caucasian,0,0,Male,No,absent,absent,,absent,Yes,absent,absent,absent,High,not_readmitted,yes
+32,DX126,DX309,DX448,13,1,1,60-80,,1,provider_c,6,0,absent,1,7,Caucasian,0,0,Female,No,absent,absent,,absent,No,absent,absent,absent,,readmitted_late,no
+25,DX310,DX600,DX127,12,4,3,20-40,,1,gov_fund,9,0,absent,5,7,Caucasian,0,0,Female,No,absent,absent,normal,absent,No,absent,absent,absent,,not_readmitted,no
+3,DX294,DX297,DX892,8,1,0,60-80,,18,,9,0,absent,1,6,Caucasian,0,0,Male,No,absent,absent,,absent,No,absent,absent,absent,,not_readmitted,no
+76,DX307,DX310,DX166,19,6,0,80+,Cardiologist,11,,8,1,absent,1,7,Caucasian,0,0,Male,No,absent,absent,,absent,No,absent,absent,absent,,not_readmitted,no
+56,DX351,DX417,DX454,17,2,4,40-60,,1,,9,6,absent,6,17,Caucasian,1,0,Female,No,constant,absent,,absent,Yes,absent,absent,absent,,readmitted_late,yes
+62,DX294,DX297,DX367,15,1,1,60-80,Internal Medicine,1,,8,-1,absent,1,7,Caucasian,0,0,Male,No,absent,constant,normal,absent,Yes,absent,absent,absent,,readmitted_late,no
+36,DX110,DX310,DX287,11,2,0,60-80,Cardiologist,1,,9,0,absent,6,17,Hispanic,0,0,Female,Yes,constant,absent,,absent,Yes,constant,absent,absent,,readmitted_late,no
+46,DX289,DX126,DX166,10,2,0,60-80,,1,,9,3,constant,2,7,Caucasian,0,0,Female,No,absent,absent,moderate high,absent,Yes,absent,absent,absent,,readmitted_late,no
+42,DX134,DX603,DX423,10,4,5,40-60,,6,disease_mgmt,9,2,constant,1,7,AfricanAmerican,1,3,Female,No,absent,absent,,absent,Yes,absent,absent,absent,,readmitted_early,no
+74,DX134,DX293,DX387,60,9,0,40-60,,1,,7,5,decrease,6,17,,2,0,Male,Yes,absent,absent,,absent,Yes,absent,constant,absent,,readmitted_late,yes
+87,DX303,DX316,DX448,14,4,1,60-80,Family Practice,11,,9,6,absent,6,17,Caucasian,1,0,Female,No,absent,absent,normal,absent,No,absent,absent,absent,,not_readmitted,yes
+17,DX289,DX778,DX778,4,2,3,60-80,General Surgeon,25,,7,3,absent,6,17,Caucasian,3,0,Female,No,absent,absent,,absent,No,absent,absent,absent,Norm,readmitted_late,yes
+50,DX166,DX387,DX915,11,8,0,40-60,,1,self_pay,9,1,absent,1,7,Caucasian,0,0,Male,No,constant,absent,,absent,Yes,absent,absent,absent,,not_readmitted,no
+20,DX309,DX600,DX310,9,1,2,60-80,,25,,9,0,decrease,6,17,Caucasian,5,0,Female,Yes,absent,absent,,absent,Yes,absent,absent,absent,High,readmitted_late,yes
+33,DX543,DX543,DX110,27,13,4,60-80,General Surgeon,6,self_pay,7,2,decrease,3,1,Caucasian,8,0,Female,Yes,absent,absent,,absent,Yes,constant,absent,absent,,readmitted_late,yes
+73,DX543,DX134,DX605,15,13,0,60-80,,6,provider_c,9,6,absent,3,1,Caucasian,3,3,Male,No,absent,absent,,absent,No,absent,absent,absent,,readmitted_late,yes
+41,DX448,DX366,DX110,17,4,5,60-80,,1,provider_c,9,1,absent,1,7,Caucasian,1,7,Male,No,absent,constant,,absent,Yes,absent,absent,absent,,readmitted_late,no
+68,DX367,DX310,DX297,15,7,0,60-80,Internal Medicine,6,,8,0,constant,1,7,Caucasian,3,0,Male,Yes,absent,constant,,absent,Yes,absent,absent,absent,,readmitted_late,no
+49,DX380,DX779,DX110,11,2,1,60-80,,5,,4,1,absent,2,3,Caucasian,0,0,Male,No,absent,absent,,constant,Yes,absent,absent,absent,,not_readmitted,no
+48,DX598,DX177,DX107,13,5,0,80+,,3,provider_c,8,2,increase,5,1,Caucasian,2,0,Male,Yes,absent,absent,,absent,Yes,absent,absent,absent,,readmitted_early,no
+36,DX168,DX112,DX_UNK,1,1,0,0-20,Pediatric Endocrinologist,25,,2,0,absent,6,7,AfricanAmerican,0,0,Female,No,absent,absent,high,constant,Yes,absent,absent,absent,,not_readmitted,yes
+40,DX294,DX297,DX892,20,2,1,40-60,Cardiologist,1,,8,3,absent,3,0,Caucasian,0,0,Female,No,absent,absent,,absent,No,absent,absent,absent,,readmitted_late,no
+56,DX297,DX600,DX110,5,1,0,60-80,,18,,5,0,absent,1,7,Caucasian,0,0,Female,No,absent,absent,normal,constant,Yes,absent,absent,absent,,readmitted_early,no
+1,DX134,DX321,DX245,20,3,1,60-80,,6,provider_c,6,6,constant,2,1,AfricanAmerican,5,1,Female,Yes,absent,constant,,absent,Yes,absent,absent,absent,,readmitted_late,yes
+58,DX623,DX623,DX817,15,4,0,80+,,3,provider_c,9,0,increase,1,7,Caucasian,0,0,Male,Yes,absent,absent,,absent,Yes,absent,absent,absent,,not_readmitted,no
+6,DX308,DX594,DX287,5,2,0,80+,,1,provider_c,5,0,absent,1,7,Caucasian,2,2,Male,No,absent,constant,,absent,Yes,absent,absent,absent,,not_readmitted,no
