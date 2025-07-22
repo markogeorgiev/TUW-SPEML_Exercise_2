@@ -1,1 +1,4 @@
 papers/
+venv/
+pyvenv
+pyvenv.cfg
