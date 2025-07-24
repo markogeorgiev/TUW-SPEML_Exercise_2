@@ -4,7 +4,7 @@ import numpy as np
 from sklearn.preprocessing import OneHotEncoder, MinMaxScaler
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
-from sklearn.metrics import roc_auc_score, accuracy_score, confusion_matrix
+from sklearn.metrics import roc_auc_score, accuracy_score, confusion_matrix, recall_score, roc_curve
 from scipy.spatial.distance import cdist
 
 def preprocess_data(synthetic_df, test_df, sentinel_numeric=-9999):
@@ -56,20 +56,6 @@ def scale_distances(distances):
     scaler = MinMaxScaler()
     return scaler.fit_transform(distances.reshape(-1, 1)).ravel()
 
-def find_optimal_threshold(distances, labels):
-    best_score = -np.inf
-    best_thresh = 0
-    for eps in np.linspace(0, 1, 1000):
-        preds = (distances < eps).astype(int)
-        tn, fp, fn, tp = confusion_matrix(labels, preds).ravel()
-        tpr = tp / (tp + fn + 1e-10)
-        fpr = fp / (fp + tn + 1e-10)
-        score = tpr - fpr
-        if score > best_score:
-            best_score = score
-            best_thresh = eps
-    return best_thresh
-
 def main():
     parser = argparse.ArgumentParser(description="Distance-Based Membership Inference Attack")
     parser.add_argument("-s", "--synthetic", required=True, help="Path to synthetic data CSV")
@@ -82,21 +68,28 @@ def main():
     synthetic_encoded, test_encoded, test_labels = preprocess_data(synthetic_df, test_df)
     raw_distances = compute_min_distances(test_encoded, synthetic_encoded)
     scaled_distances = scale_distances(raw_distances)
-    eps_star = find_optimal_threshold(scaled_distances, test_labels)
-    predictions = (scaled_distances < eps_star).astype(int)
 
+    fpr, tpr, thresholds = roc_curve(test_labels, scaled_distances)
+    optimal_idx = np.argmax(tpr - fpr)
+    epsilon_star = (thresholds[optimal_idx])
+    
+    predictions = (scaled_distances >= epsilon_star).astype(int)
+   
     acc = accuracy_score(test_labels, predictions)
     auc = roc_auc_score(test_labels, scaled_distances)
+    recall = recall_score(test_labels, predictions)
     print(f"Accuracy: {acc:.4f}")
     print(f"ROC AUC: {auc:.4f}")
+    print(f"Recall: {recall:.4f}")
 
     # Risk score: λ = 1 - distance
     risk_scores = 1 - scaled_distances
-    test_df["predicted_is_member"] = predictions
+    test_df["prediction"] = predictions
+    test_df["predicted_is_correct"] = predictions == test_labels
     test_df["risk_score"] = risk_scores
 
     print("Results:")
-    print(test_df[["predicted_is_member", "risk_score"]])
+    print(test_df[["prediction","predicted_is_correct", "risk_score"]])
 
 if __name__ == "__main__":
     main()
