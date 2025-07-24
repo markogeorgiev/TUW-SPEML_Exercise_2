@@ -32,7 +32,7 @@ def preprocess_data(synthetic_df, test_df, sentinel_numeric=-9999):
         remainder='passthrough'
     )
     pipeline = Pipeline(steps=[('preprocessor', preprocessor)])
-    pipeline.fit(test_df)  # fit only on test data
+    pipeline.fit(test_df) 
 
     synthetic_df[categorical_cols] = synthetic_df[categorical_cols].fillna("missing")
     synthetic_df[numeric_cols] = synthetic_df[numeric_cols].fillna(sentinel_numeric)

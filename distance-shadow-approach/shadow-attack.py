@@ -24,12 +24,10 @@ import numpy as np
 import pandas as pd
 
 def preprocess_data(synthetic_df, test_df, sentinel_numeric=-9999):
-    # Extract and encode test labels
     test_labels_raw = test_df["is_member"]
     test_labels = test_labels_raw.map({"yes": 1, "no": 0}).values
     test_df = test_df.drop(columns=["is_member"])
 
-    # Align columns: keep only intersection
     common_cols = synthetic_df.columns.intersection(test_df.columns).tolist()
     if not common_cols:
         raise ValueError("No common columns found between synthetic and test data!")
@@ -37,15 +35,13 @@ def preprocess_data(synthetic_df, test_df, sentinel_numeric=-9999):
     synthetic_df = synthetic_df[common_cols].copy()
     test_df = test_df[common_cols].copy()
 
-    # Identify categorical and numeric columns based on test_df only
     categorical_cols = test_df.select_dtypes(include=["object", "category"]).columns.tolist()
     numeric_cols = test_df.select_dtypes(include=[np.number]).columns.tolist()
 
-    # Fill missing values in test_df ONLY
     test_df[categorical_cols] = test_df[categorical_cols].fillna("missing")
     test_df[numeric_cols] = test_df[numeric_cols].fillna(sentinel_numeric)
 
-    # Fit encoder only on test data (to avoid info leak)
+
     preprocessor = ColumnTransformer(
         transformers=[
             ('cat', OneHotEncoder(handle_unknown='ignore'), categorical_cols)
@@ -55,15 +51,13 @@ def preprocess_data(synthetic_df, test_df, sentinel_numeric=-9999):
     pipeline = Pipeline(steps=[('preprocessor', preprocessor)])
     pipeline.fit(test_df)  # fit only on test data
 
-    # Now apply the same missing value strategy to synthetic data
+
     synthetic_df[categorical_cols] = synthetic_df[categorical_cols].fillna("missing")
     synthetic_df[numeric_cols] = synthetic_df[numeric_cols].fillna(sentinel_numeric)
 
-    # Transform both datasets
     synthetic_encoded = pipeline.transform(synthetic_df)
     test_encoded = pipeline.transform(test_df)
 
-    # Convert sparse to dense if necessary
     if hasattr(synthetic_encoded, "toarray"):
         synthetic_encoded = synthetic_encoded.toarray()
     if hasattr(test_encoded, "toarray"):
@@ -78,7 +72,6 @@ def flatten_encoded_matrix(matrix):
         "median": np.median(matrix, axis=0),
         "var": matrix.var(axis=0)
     }
-    # Concatenate all flattened summaries
     return np.concatenate([summary["mean"], summary["median"], summary["var"]])
 
 def shadow_model_attack_all(synthetic_encoded, test_encoded, test_labels):
@@ -97,13 +90,11 @@ def shadow_model_attack_all(synthetic_encoded, test_encoded, test_labels):
 
         shadow_minus = rest[np.random.choice(rest.shape[0], synthetic_encoded.shape[0], replace=True)]
 
-        # Flatten
         f_plus = flatten_encoded_matrix(shadow_plus)
         f_minus = flatten_encoded_matrix(shadow_minus)
         X_attack = np.vstack([f_plus, f_minus])
         y_attack = np.array([1, 0])
 
-        # Flatten real synthetic data
         real_flat = flatten_encoded_matrix(synthetic_encoded).reshape(1, -1)
 
         classifiers = [
@@ -143,24 +134,21 @@ def main():
 
     preds, confidence = shadow_model_attack_all(synthetic_encoded, test_encoded, test_labels)
 
-    # Add results back to original test_df
     test_df["predicted_is_member"] = preds
     test_df["confidence_score"] = confidence
     test_df["true_label"] = test_labels
 
-    # Print results
     acc = accuracy_score(test_labels, preds)
     auc = roc_auc_score(test_labels, confidence)
     precision = precision_score(test_labels, preds)
     recall = recall_score(test_labels, preds)
-    print(f"\n✅ Shadow Model Attack Complete.")
-    print(f"🎯 Accuracy: {acc:.4f}")
-    print(f"📈 ROC AUC: {auc:.4f}")
-    print(f"🔍 Precision:    {precision:.4f}")
-    print(f"📢 Recall:       {recall:.4f}")
+    print(f"Shadow Model Attack Complete.")
+    print(f"Accuracy: {acc:.4f}")
+    print(f"ROC AUC: {auc:.4f}")
+    print(f"Precision:    {precision:.4f}")
+    print(f"Recall:       {recall:.4f}")
 
     # test_df.to_csv("shadow_attack_results.csv", index=False)
-    # print("📁 Results saved to shadow_attack_results.csv")
 
 if __name__ == "__main__":
     main()
