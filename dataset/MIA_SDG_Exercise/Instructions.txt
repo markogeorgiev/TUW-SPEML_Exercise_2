@@ -1,0 +1,13 @@
+In this exercise, you are provided with four synthetic datasets, each generated using a different synthesizer: CTGAN, VAE, Bayesian Network, and Gaussian Copula. The specific synthesizer used for each dataset is not disclosed.
+
+Your task is to perform a Membership Inference Attack (MIA) using only the synthetic data. The goal is to determine whether specific data points from a test set were part of the original training data used to generate the synthetic datasets and compare the results for different models.
+
+Two types of test sets are provided:
+
+Outlier Test Set – contains samples identified as outliers from the original training data.
+
+Random Test Set – contains a random selection of samples from the training data.
+
+Each test sample includes a column "is_member", which indicates whether the sample was in the training set ('yes') or not ('no'). This ground truth label should be used to evaluate your attack’s performance using metrics such as Attack Success Rate and AUC.
+
+The objective is to analyze how well different synthesizers protect against membership inference, especially for outliers compared to random samples.

@@ -1,0 +1,88 @@
+
+🔍 Running Copula Attack on: synthetic_data1.csv vs test_data_with_outliers.csv
+
+🔍 Running Copula Attack on: synthetic_data1.csv vs test_data_wto_outliers.csv
+
+🔍 Running Copula Attack on: synthetic_data2.csv vs test_data_with_outliers.csv
+
+🔍 Running Copula Attack on: synthetic_data2.csv vs test_data_wto_outliers.csv
+
+🔍 Running Copula Attack on: synthetic_data3.csv vs test_data_with_outliers.csv
+
+🔍 Running Copula Attack on: synthetic_data3.csv vs test_data_wto_outliers.csv
+
+🔍 Running Copula Attack on: synthetic_data4.csv vs test_data_with_outliers.csv
+
+🔍 Running Copula Attack on: synthetic_data4.csv vs test_data_wto_outliers.csv
+
+==== Results for synthetic_data1.csv vs test_data_with_outliers.csv ====
+  Accuracy: 0.5417
+ Precision: 0.5417
+    Recall: 0.5417
+        F1: 0.5417
+       AUC: 0.5968
+       ASR: 0.5417
+------------------------------
+
+==== Results for synthetic_data1.csv vs test_data_wto_outliers.csv ====
+  Accuracy: 0.4500
+ Precision: 0.4500
+    Recall: 0.4500
+        F1: 0.4500
+       AUC: 0.3975
+       ASR: 0.4500
+------------------------------
+
+==== Results for synthetic_data2.csv vs test_data_with_outliers.csv ====
+  Accuracy: 0.5833
+ Precision: 0.5833
+    Recall: 0.5833
+        F1: 0.5833
+       AUC: 0.6241
+       ASR: 0.5833
+------------------------------
+
+==== Results for synthetic_data2.csv vs test_data_wto_outliers.csv ====
+  Accuracy: 0.4500
+ Precision: 0.4500
+    Recall: 0.4500
+        F1: 0.4500
+       AUC: 0.4925
+       ASR: 0.4500
+------------------------------
+
+==== Results for synthetic_data3.csv vs test_data_with_outliers.csv ====
+  Accuracy: 0.4583
+ Precision: 0.4583
+    Recall: 0.4583
+        F1: 0.4583
+       AUC: 0.4753
+       ASR: 0.4583
+------------------------------
+
+==== Results for synthetic_data3.csv vs test_data_wto_outliers.csv ====
+  Accuracy: 0.5000
+ Precision: 0.5000
+    Recall: 0.5000
+        F1: 0.5000
+       AUC: 0.4475
+       ASR: 0.5000
+------------------------------
+
+==== Results for synthetic_data4.csv vs test_data_with_outliers.csv ====
+  Accuracy: 0.5208
+ Precision: 0.5208
+    Recall: 0.5208
+        F1: 0.5208
+       AUC: 0.5069
+       ASR: 0.5208
+------------------------------
+
+==== Results for synthetic_data4.csv vs test_data_wto_outliers.csv ====
+  Accuracy: 0.5000
+ Precision: 0.5000
+    Recall: 0.5000
+        F1: 0.5000
+       AUC: 0.4850
+       ASR: 0.5000
+------------------------------
