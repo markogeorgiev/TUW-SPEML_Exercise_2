@@ -14,7 +14,6 @@ from sklearn.neighbors import KNeighborsClassifier
 import numpy as np
 import pandas as pd
 from sklearn.metrics import accuracy_score, roc_auc_score
-import warnings
 
 
 from sklearn.compose import ColumnTransformer
@@ -23,7 +22,7 @@ from sklearn.pipeline import Pipeline
 import numpy as np
 import pandas as pd
 
-def preprocess_data(synthetic_df, test_df, sentinel_numeric=-9999):
+def preprocess_data(synthetic_df, test_df, sentinel_numeric=-999):
     test_labels_raw = test_df["is_member"]
     test_labels = test_labels_raw.map({"yes": 1, "no": 0}).values
     test_df = test_df.drop(columns=["is_member"])

@@ -7,7 +7,7 @@ from sklearn.pipeline import Pipeline
 from sklearn.metrics import roc_auc_score, accuracy_score, confusion_matrix, recall_score, roc_curve
 from scipy.spatial.distance import cdist
 
-def preprocess_data(synthetic_df, test_df, sentinel_numeric=-9999):
+def preprocess_data(synthetic_df, test_df, sentinel_numeric=-999):
     test_labels_raw = test_df["is_member"]
     test_labels = test_labels_raw.map({"yes": 1, "no": 0}).values
     test_df = test_df.drop(columns=["is_member"])
